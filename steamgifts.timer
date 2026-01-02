@@ -1,0 +1,11 @@
+[Unit]
+Description="Timer for the steamgifts-timer.service"
+
+[Timer]
+Unit=steamgifts-timer.service
+OnBootSec=5m
+OnUnitInactiveSec=45m
+RandomizedDelaySec=15m
+
+[Install]
+WantedBy=timers.target

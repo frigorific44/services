@@ -1,0 +1,6 @@
+[Unit]
+Description=Send a notification about a failed systemd unit
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/failure-notification.sh %i

@@ -1,0 +1,9 @@
+[Unit]
+Description="Service to update seasonal theme colors."
+Wants=seasonal-theme.service
+
+[Service]
+Type=simple
+ExecStart=/home/derek/projects/themes/seasons/gen_seasonal.sh
+ExecStopPost=/usr/bin/makoctl reload 
+ExecStopPost=/usr/bin/swaymsg reload 

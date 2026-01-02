@@ -1,0 +1,10 @@
+[Unit]
+Description="Update seasonal themes daily."
+
+[Timer]
+Unit=seasonal-theme.service
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
