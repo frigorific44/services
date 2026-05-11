@@ -1,9 +1,0 @@
-[Unit]
-Description="SteamGiftsJS timer service."
-Wants=steamgifts.timer
-
-[Service]
-Type=simple
-ExecStart=/usr/bin/node /home/derek/projects/steamgiftsjs/index.js
-WorkingDirectory=/home/derek/projects/steamgiftsjs
-User=derek
